@@ -1,8 +1,10 @@
+import { fetchData } from './server'
+export default async function Home() {
+    const data = await fetchData()
 
-export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <p>fe</p>
+      <p>{data.message}</p>
     </div>
   );
 }
