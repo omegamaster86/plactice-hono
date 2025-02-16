@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 
-export default function Home() {
+export default function Hono() {
   const [message, setMessage] = useState()
 
   useEffect(() => {
